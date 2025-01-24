@@ -1,0 +1,39 @@
+.file-manager-app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 240px;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  
+  .file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .file-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .file-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .file-options button {
+    margin-top: 0.5rem;
+  }
+  
