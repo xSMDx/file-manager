@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.file-manager {
+  display: flex;
+  height: 100vh;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Top Zone: Search Bar and Buttons */
+.top-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(248, 249, 250, 0.8); /* Light gray with transparency */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  flex: 1;
+  margin-right: 20px;
+  border: transparent;
+  padding: 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent; /* Transparent background */
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #666; /* Placeholder text color */
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.action-btn:hover {
+  width: 120px;
+  border-radius: 20px;
+}
+
+.action-btn .icon {
+  font-size: 18px;
+}
+
+.action-btn .text {
+  display: none;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.action-btn:hover .text {
+  display: inline;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.toggle-btn {
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  color: #000000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle-btn:hover {
+  background-color: #e9ecef;
+}
+
+/* File Grid Styles */
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.file-item {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.file-item:hover {
+  transform: translateY(-5px);
+}
+
+.file-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.file-details {
+  text-align: center;
+}
+
+.file-name {
+  font-weight: bold;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.file-info {
+  font-size: 12px;
+  color: #666;
+}
